@@ -2,10 +2,11 @@ import React from 'react'
 import AutoWrite from './AutoWrite'
 import Data from '../data'
 import responses from '../data'
+import sanitizeHtml  from   'sanitize-html'
 
 function Console() {
     const [consoleState, setConsoleState] = React.useState(
-        ['Welcome to mi console Resume, check the comands to write on the console on the top of the page or write "comands" on the console to know more']
+        ['Welcome to my console Resume, check the comands to write on the console on the top of the page or write "comands" on the console to know more']
 
     )
     const style = {
@@ -21,11 +22,9 @@ function Console() {
         const newState = [...consoleState]
         const lowCaseValue = text.value.toLowerCase()
         let response
-        console.log(Data)
-
-        if (lowCaseValue === "comand") {
+        if (lowCaseValue === "comands") {
             response = "The avaliable comands are: <br/>"
-            Data.forEach(items => response += `${items.property} <br/>`)
+            Data.forEach(items => response += `${items.property} <br/>`)    
         } else {
             Data.forEach(({ property, resp }) => {
                 if (property === lowCaseValue) {
@@ -35,19 +34,24 @@ function Console() {
                 
             })
         }
+        
          if (response === undefined ) {
             response = `The comand ${text.value} is not a know comand.<br/> You can check the list of comands on the top of the screen or write "comand" to see the list on screen.`
          }
-            
-        newState.push(text.value)
+        const cleanValue=sanitizeHtml(text.value, {
+            allowedTags: [ 'b', 'i', 'em', 'strong', 'a','br','p' ],
+            allowedAttributes: {
+              'a': [ 'href' ],
+              'p':[ 'class' ]
+            }
+          })
+        newState.push(cleanValue)
         newState.push(response)
         text.value = ""
         window.scrollTo(0, window.innerHeight)
         setConsoleState(newState)
     }
-    window.onclick=()=>{
-        document.getElementById('input-main').focus()
-    }
+
     return (
         <div style={style} className="container">
             {

@@ -7,13 +7,13 @@ const AutoWrite = props => {
       React.useEffect(() => {
         var app = document.getElementById("last-p");
         const typewriter =  new Typewriter(app, {
-            delay:1
+            delay:1,
           });
           typewriter
             .typeString(text)
             .start();
           settext(text)
-
+          
           
       }, [props.text])
     
