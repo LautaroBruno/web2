@@ -48,7 +48,7 @@ function Console() {
         newState.push(cleanValue)
         newState.push(response)
         text.value = ""
-        window.scrollTo(0, window.innerHeight)
+        window.scrollTo(0, document.getElementsByTagName('body')[0].offsetHeight)
         setConsoleState(newState)
     }
     let last = ""
@@ -61,7 +61,7 @@ function Console() {
     })
     React.useEffect(() => {
         
-        window.scrollTo(0, window.innerHeight)
+        window.scrollTo(0, document.getElementsByTagName('body')[0].offsetHeight)
     }, [consoleState])
     return (
         <div style={style} className="container">
