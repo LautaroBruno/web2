@@ -51,7 +51,18 @@ function Console() {
         window.scrollTo(0, window.innerHeight)
         setConsoleState(newState)
     }
-
+    let last = ""
+    React.useEffect(()=>{
+        document.getElementById('input-main').focus()
+        window.addEventListener("keypress", ()=>{
+            
+        document.getElementById('input-main').focus()
+        })
+    })
+    React.useEffect(() => {
+        
+        window.scrollTo(0, window.innerHeight)
+    }, [consoleState])
     return (
         <div style={style} className="container">
             {
@@ -70,6 +81,19 @@ function Console() {
                 {(e) => {
                     if (e.keyCode === 13) {
                         witeOnConsole(e.target)
+                    }else if (e.keyCode === 38){
+                        last === "" ? last = consoleState.length-2 : last -= 2
+                        e.target.value= last >= 0 ?consoleState[last] : ""
+                        if (last<0){
+                            last=-1
+                        }
+                    }else if (e.keyCode === 40){
+                        last === "" ? last = consoleState.length+2 : last += 2
+                        e.target.value= last >= 0 ?consoleState[last] : ""
+                    }
+                    if (e.target.value==="undefined"){
+                        e.target.value = ""
+                        last = consoleState.length
                     }
                 }} />
         </div>

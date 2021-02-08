@@ -1,3 +1,4 @@
+import PDF from "./resources/LautaroBruno.pdf"
 const responses = [
     {
         property: "name",
@@ -60,7 +61,10 @@ const responses = [
     }, {
         property: "about me",
         resp: 'I am an outgoing person willing to take on new challenges and I like to work in work groups. <br/> My main interest is in developing my programming skills. My hobbies are gaming and music.'
-    }, 
+    }, {
+        property: "resume",
+        resp: `<a href="${PDF}">Click Here to download my PDF resume</a>`
+    }
     
 
 ]

@@ -13,9 +13,12 @@ const AutoWrite = props => {
             .typeString(text)
             .start();
           settext(text)
-          
-          
+         
+      ro.observe(document.getElementById("last-p"))
       }, [props.text])
+      var ro = new ResizeObserver(entries => {
+        window.scrollTo(0, window.innerHeight)
+  });
     
     return (
         <div style={{paddingLeft:"20px"}} >
