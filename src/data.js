@@ -10,7 +10,7 @@ const responses = [
         `
     },{
         property: "location",
-        resp: '<a href="https://www.google.com/maps/place/Empalme+Villa+Constituci%C3%B3n,+Santa+Fe/data=!4m2!3m1!1s0x95b76de2988c4c75:0xfb4737eba386408b?sa=X&ved=2ahUKEwjHg_LhsbjuAhXLHLkGHaCfAcUQ8gEwCnoECB0QAQ">Emaplme Villa Constitución, Santa Fe, Argentina</a> (But avaliable to move).'
+        resp: '<a target="_blank" href="https://www.google.com/maps/place/Empalme+Villa+Constituci%C3%B3n,+Santa+Fe/data=!4m2!3m1!1s0x95b76de2988c4c75:0xfb4737eba386408b?sa=X&ved=2ahUKEwjHg_LhsbjuAhXLHLkGHaCfAcUQ8gEwCnoECB0QAQ">Emaplme Villa Constitución, Santa Fe, Argentina</a> (But avaliable to move).'
     },{
         property:"languages",
         resp:`spanish: native <br/> 
@@ -31,17 +31,17 @@ const responses = [
         Visual Basic`
     },{
         property:"experience",
-        resp:`place: <a href="https://www.google.com/search?client=firefox-b-d&q=Cooperativa+de+provisi%C3%B3n+de+obras+y+servicios+p%C3%BAblicos+de+EVC+LTDA">Cooperativa de provisión de obras y servicios públicos de EVC LTDA</a> <br/>
+        resp:`place: <a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=Cooperativa+de+provisi%C3%B3n+de+obras+y+servicios+p%C3%BAblicos+de+EVC+LTDA">Cooperativa de provisión de obras y servicios públicos de EVC LTDA</a> <br/>
         from:2016 <br/>
         to: 2019<br/>
         position: IT<br/>
         <br/>
-        place: <a href="https://www.liderlogo.es/">Liderlogo</a><br/>
+        place: <a target="_blank" href="https://www.liderlogo.es/">Liderlogo</a><br/>
         from:2019 <br/>
         to: 2020<br/>
         position: Web Developer ( React JS, Vue JS, Wordpress)<br/>
         <br/>
-        place: <a href="https://axyoma.com.ar/">Axioma</a><br/>
+        place: <a target="_blank" href="https://axyoma.com.ar/">Axioma</a><br/>
         from:2020 <br/>
         to: now <br/>
         position: Full Stack Developer ( React JS, Node JS )
@@ -63,7 +63,7 @@ const responses = [
         resp: 'I am an outgoing person willing to take on new challenges and I like to work in work groups. <br/> My main interest is in developing my programming skills. My hobbies are gaming and music.'
     }, {
         property: "resume",
-        resp: `<a href="${PDF}">Click Here to download my PDF resume</a>`
+        resp: `<a target="_blank" href="${PDF}">Lautaro Bruno PDF resume</a>`
     }
     
 
