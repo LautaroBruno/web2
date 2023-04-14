@@ -17,8 +17,8 @@ export default function Modal({ modal, setModal }) {
         </div>
         <div className="modalBody">
           <p>
-            To use the console write "comands" in the input field and press
-            enter. It will show the list of comands avaliables to know more
+            To use the console write "commands" in the input field and press
+            enter. It will show the list of commands avaliables to know more
             about me.
             {":)"}
           </p>
