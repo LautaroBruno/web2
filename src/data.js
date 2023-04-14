@@ -1,4 +1,3 @@
-import PDF from "./resources/LautaroBruno.pdf";
 const responses = [
   {
     property: "name",
@@ -12,21 +11,24 @@ const responses = [
   },
   {
     property: "location",
-    resp: '<a target="_blank" href="https://www.google.com/maps/place/Empalme+Villa+Constituci%C3%B3n,+Santa+Fe/data=!4m2!3m1!1s0x95b76de2988c4c75:0xfb4737eba386408b?sa=X&ved=2ahUKEwjHg_LhsbjuAhXLHLkGHaCfAcUQ8gEwCnoECB0QAQ">Emaplme Villa Constitución, Santa Fe, Argentina</a> (But avaliable to move).',
+    resp: '<a target="_blank" href="https://www.google.com/maps/place/Empalme+Villa+Constituci%C3%B3n,+Santa+Fe/data=!4m2!3m1!1s0x95b76de2988c4c75:0xfb4737eba386408b?sa=X&ved=2ahUKEwjHg_LhsbjuAhXLHLkGHaCfAcUQ8gEwCnoECB0QAQ">Villa Constitución, Santa Fe, Argentina</a> .',
   },
   {
     property: "languages",
     resp: `spanish: native <br/> 
-        english: medium`,
+        english: B1`,
   },
   {
     property: "skills",
     resp: `
-        MAIN TECNOLOGIES:<br/>
+        MAIN TECHNOLOGIES:<br/>
         Typescript<br/>
         React / Next <br/>
         Node <br/>
-        Express`,
+        Express
+        Python
+        FastAPI
+        DJanjo`,
   },
   {
     property: "experience",
@@ -51,15 +53,15 @@ const responses = [
         position: Full Stack Developer ( React JS, Node JS )<br/>
         <br/>
         position: Full Stack Developer ( React JS, Node JS )<br/>
-        place: <a target="_blank" href="https://www.azumo.xyz/">Novolabs</a><br/>
+        place: <a target="_blank" href="https://www.azumo.co/">Azumo</a><br/>
         from:2022 <br/>
         to: now <br/>
-        position: Full Stack Developer ( React JS, Node JS )
+        position: Full Stack Developer ( React JS, Node JS, FastApi)
         `,
   },
   {
     property: "social media",
-    resp: ' <a target="_blank" href="https://www.instagram.com/lautarobrunok/">Instagram</a><br/><a target="_blank" href="https://www.linkedin.com/in/lautarobruno/">Linkedin</a><br/><a target="_blank" href="https://github.com/LautaroBruno">GitHub</a>',
+    resp: ' <a target="_blank" href="https://www.instagram.com/lautarobrunop/">Instagram</a><br/><a target="_blank" href="https://www.linkedin.com/in/lautarobruno/">Linkedin</a><br/><a target="_blank" href="https://github.com/LautaroBruno">GitHub</a>',
   },
   {
     property: "linkedin",
@@ -75,7 +77,7 @@ const responses = [
   },
   {
     property: "resume",
-    resp: `<a target="_blank" href="${PDF}">Lautaro Bruno PDF resume</a>`,
+    resp: `<a target="_blank" href="https://drive.google.com/file/d/1P5Alo4HwtyS7OozSieUwBYALSECtov5J/view?usp=share_link">Lautaro Bruno PDF resume</a>`,
   },
 ];
 export default responses;
