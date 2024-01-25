@@ -16,7 +16,7 @@ const responses = [
   {
     property: "languages",
     resp: `spanish: native <br/> 
-        english: B1`,
+        english: B2`,
   },
   {
     property: "skills",
@@ -77,7 +77,7 @@ const responses = [
   },
   {
     property: "resume",
-    resp: `<a target="_blank" href="https://drive.google.com/file/d/1P5Alo4HwtyS7OozSieUwBYALSECtov5J/view?usp=share_link">Lautaro Bruno PDF resume</a>`,
+    resp: `<a target="_blank" href="https://www.canva.com/design/DAEVe-RVl90/TOyIamU-i5iI5xKciMLEYg/view?utm_content=DAEVe-RVl90&utm_campaign=designshare&utm_medium=link&utm_source=editor">Lautaro Bruno PDF resume</a>`,
   },
 ];
 export default responses;
